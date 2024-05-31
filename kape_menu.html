@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Menu</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontsawesome/css/all.min.css">
+    <script type="text/javascript" src="js/jquery-min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="icon" href="images/logo.png" >
+    <link rel="stylesheet" href="css/header.css">   
+
+</head>
+<body>
+    <style>
+        *{
+            font-family: Eraser;
+        }
+         @font-face {
+    font-family: Eraser;
+    src:url(font/EraserDust.ttf);
+    }
+    .navbar {
+    background-color: #212121;
+    color: #fcfcfc;
+    height: 80px;
+      }
+      body{
+        background-color: rgb(233, 233, 233);
+      }
+      h4:hover{
+        text-decoration: underline;
+      }
+      #choosen {
+        color:#ddaa63;
+        font-weight: bold;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 20px;
+        text-decoration: underline;
+      }
+      #choosen2 {
+        color:#ddaa63;
+        font-weight: bold;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 20px;
+        text-decoration: underline;
+      }
+      .Output1 {
+        color:#ddaa63;
+        font-weight: bold;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 20px;
+        text-decoration: underline;
+      }
+      #sigee {
+        color:#ddaa63;
+        font-weight: bold;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 20px;
+        text-decoration: underline;
+      }
+      .Output2{
+        color:#ddaa63;
+        font-weight: bold;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 20px;
+        text-decoration: underline;
+      }
+      .Output3{
+        color:#ddaa63;
+        font-weight: bold;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 20px;
+        text-decoration: underline;
+      }
+      label{
+        color: #fafafa;
+      }
+      #receipt{
+        color: #fcfcfc;
+      }
+      
+      #list{
+        text-align: left;
+        font-size: 18px;
+        margin-top: -15px;
+      }
+      #price{
+        text-align: left;
+        font-weight: bold;
+        font-size: 20px;
+      }
+      #roast{
+        text-align: center;
+        font-size: 80px;
+        margin-top: 10px;
+        color: #212121;
+      }
+      h1{
+        text-align: center;
+      }
+      .sircol{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 5px solid #ddaa63;
+    opacity: 1;
+    filter: alpha(opacity=100);    
+}
+.sircol:hover{
+    border-color: #ddaa63;
+    transform: scale(1.1);
+    opacity: 0.5;
+    filter: alpha(opacity=40);    
+}
+button a{
+    color: #d8d8d8;
+}
+#FAQ{
+    margin-left: 1050px;
+        color: #fcfcfc;
+    }
+#logo{
+    margin-left: -30px;
+}
+
+    </style>
+    <header>
+        <nav class="navbar sticky-top shadow">   
+            <div class="container-fluid ps-20 px-md-20 container-xxxl">
+    <ul class="nav nav-left me-auto d-md-flex d-none">
+    <li>
+        <button class="navbar-toggler ml-5 border-0 shadow bg-white"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation" style="margin-left:10px; ">
+        <i class="fa-solid fa-list fa-2xl" style="color: #505050;"></i>
+    </li>
+    <li>
+        <div class=" text-light p-2 ">
+        </div>
+    </li>
+    <li class="nav-header">
+    <p><a href="index.html">Menu</a></p>
+    </li>
+    <li class="nav-header" >
+    <p ><a id="FAQ" href="FAQ.html">FAQ</a></p>
+    </li>
+    <li>
+        <div id="logo">
+            <img src="images/logosmall.png" alt="Republic";>
+        </div>
+    </li>
+    </ul>
+    </button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header bg-body-tertiary">
+                        <img src="images/logosmall.png">
+                        <h1 id="lblName" class="offcanvas-title fw-bold" id="offcanvasNavbarLabel">Roast Republic</h1>
+                    </div>
+                    <div class="offcanvas-body">
+         <!-- navigation side bar buttons -->
+         <ul class=" navbar-nav justify-content-end flex-grow-1 pe-3" role="tablist">
+            <div class="seffects">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" aria-current="page" href="index.html" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                        <i class="fa-solid fa-house" style="color: #fafafa;"></i>
+                        <span style="margin-left:10px;">Home</span>
+                    </a>
+                </li>
+            </div>
+            <div class="seffects">  
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" aria-current="page" href="kape_menu.html" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                        <i class="fa-solid fa-mug-hot fa-beat" style="color: #ffffff;"></i>
+                        <span style="margin-left:10px;">Coffee</span>
+                    </a>
+                </li>
+            </div>
+                        <div class="seffects">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active" aria-current="page" href="tsaa_menu.html" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                                    <i class="fa-brands fa-envira fa-flip" style="color: #ffffff;"></i>
+                                    <span style="margin-left:10px;">Tea</span>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="seffects">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active" aria-current="page" href="snakan_menu.html" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                                    <i class="fa-solid fa-cookie fa-spin" style="color: #ffffff;"></i>
+                                    <span style="margin-left:10px;">Snacks</span>
+                                </a>
+                            </li>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>    
+    <h1 ><a id="roast" href="index.html">Roast Republic Coffee's</a></h1>
+        
+    <div class="mgakape">
+            <div class="coffeeTypes1">
+                <details>
+                    <summary ><img src="images/americano.jpg" class="sircol"> <br><h4><stong><i class="fa-solid fa-mug-hot fa-bounce" style="color: #141414;"></i>&nbsp;Americano </stong></h4>  </summary>
+                    <p id="price">
+                        Price:
+                        <ul>
+                            <li id="list">
+                                <p>Small 40&#8369;</p>
+                            </li>
+                            <li id="list">
+                                <p>Medium 60&#8369;</p>
+                            </li>
+                            <li id="list">
+                                <p>Large 80&#8369;</p>
+                            </li>
+                        </ul>
+                    </p>
+                    <div id="AM">
+                    <button onclick="gusto1() ; openPopup2()" type="button">Make Order</button>
+                    </div>
+                </details>
+
+                <details>
+                    <summary ><img src="images/cappucino.jpg" class="sircol"> <br><h4><stong><i class="fa-solid fa-mug-hot fa-bounce" style="color: #141414;"></i>&nbsp;Cappucino </stong></h4>  </summary>
+                    <p id="price">
+                        Price:
+                        <ul>
+                            <li id="list">
+                                <p>Small 50&#8369;</p>
+                            </li>
+                            <li id="list">
+                                <p>Medium 70&#8369;</p>
+                            </li>
+                            <li id="list">
+                                <p>Large 90&#8369;</p>
+                            </li>
+                        </ul>
+                    </p>
+                    <div id="CP">
+                    <button onclick="gusto2() ; openPopup2()" type="button">Make Order</button>
+                    </div>
+                </details>   
+
+                <details>
+                    <summary ><img src="images/irish coffee.jpg" class="sircol"> <br><h4><stong><i class="fa-solid fa-mug-hot fa-bounce" style="color: #141414;"></i>&nbsp;Irish Brew </stong></h4>  </summary>
+                    <p id="price">
+                        Price:
+                        <ul>
+                            <li id="list">
+                                <p>Small 55&#8369;</p>
+                            </li>
+                            <li id="list">
+                                <p>Medium 85&#8369;</p>
+                            </li>
+                            <li id="list">
+                                <p>Large 95&#8369;</p>
+                            </li>
+                        </ul>
+                    </p>
+                    <div id="IC">
+                    <button onclick="gusto3() ; openPopup2()"  type="button">Make Order</button>
+                    </div>
+                </details>
+   
+                <details>
+                    <summary ><img src="images/latte.jpg" class="sircol"> <br><h4><stong> <i class="fa-solid fa-mug-hot fa-bounce" style="color: #141414;"></i>&nbsp; Latte </stong></h4>  </summary>
+                    <p id="price">
+                        Price:
+                        <ul>
+                            <li id="list">
+                                <p>Small 55&#8369;</p>
+                            </li>
+                            <li id="list">
+                                <p>Medium 65&#8369;</p>
+                            </li>
+                            <li id="list">
+                                <p>Large 75&#8369;</p>
+                            </li>
+                        </ul>
+                    </p>
+                    <div id="L">
+                    <button onclick="gusto4() ; openPopup2()" type="button">Make Order</button>
+                    </div>
+                </details>
+
+            </div>
+            <div class="coffeeTypes2">
+
+                <details>
+                    <summary ><img src="images/mocha.jpg" class="sircol"> <br><h4><stong> <i class="fa-solid fa-mug-hot fa-bounce" style="color: #141414;"></i>&nbsp;Mocha </stong></h4>  </summary>
+                    <p id="price">
+                        Price:
+                        <ul>
+                            <li id="list">
+                                <p>Small 55&#8369;</p>
+                            </li>
+                            <li id="list">
+                                <p>Medium 80&#8369;</p>
+                            </li>
+                            <li id="list">
+                                <p>Large 95&#8369;</p>
+                            </li>
+                        </ul>
+                    </p>
+                    <div id="M">
+                    <button onclick="gusto5() ; openPopup2()" type="button">Make Order</button>
+                    </div>
+                </details>
+
+                <details>
+                    <summary ><img src="images/vanila.jpg" class="sircol"> <br><h4><stong> <i class="fa-solid fa-mug-hot fa-bounce" style="color: #141414;"></i>&nbsp;Vanilla </stong></h4>  </summary>
+                    <p id="price">
+                        Price:
+                        <ul>
+                            <li id="list">
+                                <p>Small 50&#8369;</p>
+                            </li>
+                            <li id="list">
+                                <p>Medium 78&#8369;</p>
+                            </li>
+                            <li id="list">
+                                <p>Large 88&#8369;</p>
+                            </li>
+                        </ul>
+                    </p>
+                    <div id="V">
+                    <button onclick="gusto6() ; openPopup2()" type="button">Make Order</button>
+                    </div>
+                </details>
+
+                <details>
+                    <summary ><img src="images/macchiattio.jpg" class="sircol"> <br><h4><stong> <i class="fa-solid fa-mug-hot fa-bounce" style="color: #141414;"></i>&nbsp;Macchiato </stong></h4>  </summary>
+                    <p id="price">
+                        Price:
+                        <ul>
+                            <li id="list">
+                                <p>Small 50&#8369;</p>
+                            </li>
+                            <li id="list">
+                                <p>Medium 70&#8369;</p>
+                            </li>
+                            <li id="list">
+                                <p>Large 85&#8369;</p>
+                            </li>
+                        </ul>
+                    </p>
+                    <div id="MC">
+                    <button onclick="gusto7() ; openPopup2()"  type="button">Make Order</button>
+                    </div>
+                </details>
+
+                <details>
+                    <summary ><img src="images/affogato.jpg" class="sircol"> <br><h4><stong> <i class="fa-solid fa-mug-hot fa-bounce" style="color: #141414;"></i>&nbsp;Affogato </stong></h4>  </summary>
+                    <p id="price">
+                        Price:
+                        <ul>
+                            <li id="list">
+                                <p>Small 50&#8369;</p>
+                            </li>
+                            <li id="list">
+                                <p>Medium 60&#8369;</p>
+                            </li>
+                            <li id="list">
+                                <p>Large 80&#8369;</p>
+                            </li>
+                        </ul>
+                    </p>
+                    <div id="AF">
+                    <button onclick="gusto8() ; openPopup2()" type="button">Make Order</button>
+                    </div>
+                </details>
+
+            </div>
+        <div class="container">
+        <div class="popup2" id="popup2">
+        <div class="configurations">
+                <div class="configs-btns">
+                <p> <span id="choosen2"> </span></p>
+                    <div id="selection"> 
+                    <label for="select1"> You like your coffee Hot or Cold? </label>   
+                            <select id="select1">
+                                <option value="Hot">Hot</option>
+                                <option value="Cold">Cold</option>
+                            </select><br>
+                    <label for="select2">Size :</label>
+                            <select id="select2">
+                                <option value="Small">Small</option>
+                                <option value="Medium">Medium</option>
+                                <option value="Tall">Tall</option>
+                            </select><br>
+                            <label for="select3">Add-ons :</label>
+                            <select id="select3">
+                                <option value="None"> None</option>
+                                <option value="Expresso-shot 5&#8369;">Expresso Shot 5&#8369;</option>
+                                <option value="Milk 15&#8369;">Milk 15&#8369;</option>
+                                <option value="Cream 10&#8369;">Cream 10&#8369;</option>
+                            </select><br>
+                    </div>            
+                    <div class="ctypes">
+                                <br>
+                            <p id="receipt">Sugar Level &nbsp;</p>    
+                                <form id="receipt"oninput="x.value=parseInt(Input.value)">
+                                <input class="Input" id="Input" type="range" min="0" value="0" max="100" step="25"> =&nbsp;
+                            <output name="x" for="Input">0 </output> 
+                            </form>
+                            </p>
+                    </div>
+                    <p>
+                        press ok and get reciept
+                    </p>      
+                    <div >     
+             <button type="button" onclick="closePopup2();getOption();openPopup()"> Place Order </button>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        </div>
+
+<div class="container">
+    <button type="submit" class="btn" onclick="openPopup()"> <p id="main">Get Receipt</p> </button>
+       <div class="popup" id="popup">
+        <div class="resibo" id="Resibo">
+            <div class="bayaad" >
+                <h3><i class="fa-solid fa-receipt" style="color: #ffffff;"></i>&nbsp;RECEIPT:</h3>
+                <p><i class="fa-solid fa-mug-saucer" style="color: #ffffff;"></i>&nbsp;Coffee:
+                <span id="choosen"> </span>
+                </p>
+                <p> Hot/Cold:
+                    <span class="Output1">Hot </span>
+                </p>
+                <p> <i class="fa-solid fa-cubes-stacked" style="color: #ffffff;"></i>
+                    Sugar level : &nbsp;<span id="sigee"> 0 </span>
+                </p>
+               <p id="receipt">Size: <span class="Output2">Small</span> </p>
+
+               <p><i class="fa-solid fa-plus" style="color: #ffffff;"></i>Add-ons: &nbsp;<span class="Output3"> None </span> </p>
+               <br>
+               <p>
+                Thank you for your purchase! <i class="fa-solid fa-star" style="color: #ffffff;"></i>
+                <br><br>Show the receipt to our cashier to finalize payment
+               </p>
+            </div>
+        </div>
+        <a href="index.html"><button type="button" onclick="closePopup()">OK  </button> </a> 
+        </div>
+</div>
+
+</div>
+        <script type="text/javascript">
+     function getOption() {
+        
+            selectElement = document.querySelector('#select1');
+            Output1 = selectElement.value;
+            document.querySelector('.Output1').textContent = Output1;
+            selectElement = document.querySelector('#select2');
+            Output2 = selectElement.value;
+            document.querySelector('.Output2').textContent = Output2;
+
+            selectElement = document.querySelector('#select3');
+            Output3 = selectElement.value;
+            document.querySelector('.Output3').textContent = Output3;
+
+            var pisti = document.getElementById("Input").value;
+            document.getElementById("sigee").innerHTML = pisti;
+          
+        }
+
+    function gusto1(){
+    var pinili = document.getElementById("AM").value = "Americano";
+    document.getElementById("choosen").innerHTML = pinili;
+    document.getElementById("choosen2").innerHTML = pinili;
+
+    }
+    
+    function gusto2(){
+    var pinili = document.getElementById("CP").value = "Cappucino";
+    document.getElementById("choosen").innerHTML = pinili;
+    document.getElementById("choosen2").innerHTML = pinili;
+
+    }
+    function gusto3(){
+    var pinili = document.getElementById("IC").value = "Irish Coffee";
+    document.getElementById("choosen").innerHTML = pinili;
+    document.getElementById("choosen2").innerHTML = pinili;
+    }
+
+    function gusto4(){
+    var pinili = document.getElementById("L").value = "Latte";
+    document.getElementById("choosen").innerHTML = pinili;
+    document.getElementById("choosen2").innerHTML = pinili;
+
+    }
+
+    function gusto5(){
+    var pinili = document.getElementById("M").value = "Mocha";
+    document.getElementById("choosen").innerHTML = pinili;
+    document.getElementById("choosen2").innerHTML = pinili;
+
+    }
+
+    function gusto6(){
+    var pinili = document.getElementById("V").value = "Vanilla";
+    document.getElementById("choosen").innerHTML = pinili;
+    document.getElementById("choosen2").innerHTML = pinili;
+
+    }
+
+    function gusto7(){
+    var pinili = document.getElementById("MC").value = "Macchiato";
+    document.getElementById("choosen").innerHTML = pinili;
+    document.getElementById("choosen2").innerHTML = pinili;
+
+    }
+
+    function gusto8(){
+    var pinili = document.getElementById("AF").value = "Affogato";
+    document.getElementById("choosen").innerHTML = pinili;
+    document.getElementById("choosen2").innerHTML = pinili;
+
+    }
+
+    let popup = document.getElementById("popup");
+
+    function openPopup(){
+        popup.classList.add("open-popup");
+    }
+
+    function closePopup(){
+        popup.classList.remove("open-popup");
+    }
+
+
+    ////////
+    let popup2 = document.getElementById("popup2");
+
+    function openPopup2(){
+        popup2.classList.add("open-popup2");
+    }
+
+    function closePopup2(){
+        popup2.classList.remove("open-popup2");
+    }
+        </script>
+        
+</body>
+<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+</html>

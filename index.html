@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roast Republic Menu</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontsawesome/css/all.min.css">
+    <script type="text/javascript" src="js/jquery-min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <link rel="stylesheet" href="css\homestyle.css">
+    <link rel="stylesheet" href="css\header.css">
+    <link rel="icon" href="images/logo.png" >
+</head>
+
+<body>
+<style>
+    h1{
+    color: rgb(0, 0, 0);
+    }
+    h2{
+    font-size: 300%;
+    color: aliceblue;
+    }
+    h3{
+    font-size: 180%;
+    color: aliceblue;
+    }
+    h4{
+       text-align: center;
+       font-size: 300%;
+       color: aliceblue;
+    }
+    body{
+    background-color: #212121;
+    background-image: url("images/mainbg.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    transform: scale(1);
+    }
+    @font-face {
+    font-family: Eraser;
+    src:url(font/EraserDust.ttf);
+    }
+    a{
+        opacity: 80%;
+    }
+    a:hover{
+        transform: scale(1.1);
+        opacity: 100%;
+    }
+    #FAQ{
+        color: #000000;
+    }
+    #logo 
+{
+    margin-left:1000px;
+}
+    
+</style>
+<header>
+    <nav class="navbar sticky-top shadow">   
+        <div class="container-fluid ps-20 px-md-20 container-xxxl">
+<ul class="nav nav-left me-auto d-md-flex d-none">
+<li>
+    <button class="navbar-toggler ml-5 border-0 shadow bg-white"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation" style="margin-left:10px; ">
+    <i class="fa-solid fa-list fa-2xl" style="color: #505050;"></i>
+</li>
+<li>
+    <div class=" text-light p-2 ">
+    </div>
+</li>
+<li class="nav-header">
+<p>MENU</p>
+</li>
+<li class="nav-header" >
+<p ><a id="FAQ"href="FAQ.html">FAQ</a></p>
+</li>
+<li>
+    <div id="logo">
+        <img src="images/logosmall.png" alt="Republic";>
+    </div>
+</li>
+</ul>
+</button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header bg-body-tertiary">
+                    <img src="images/logosmall.png">
+                    <h1 id="lblName" class="offcanvas-title fw-bold" id="offcanvasNavbarLabel">Roast Republic</h1>
+                </div>
+                <div class="offcanvas-body">
+                    <!-- navigation side bar buttons -->
+                    <ul class=" navbar-nav justify-content-end flex-grow-1 pe-3" role="tablist">
+                    <div class="seffects">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" aria-current="page" href="index.html" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                                <i class="fa-solid fa-house" style="color: #fafafa;"></i>
+                                <span style="margin-left:10px;">Home</span>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="seffects">  
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" aria-current="page" href="kape_menu.html" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                                <i class="fa-solid fa-mug-hot fa-beat" style="color: #ffffff;"></i>
+                                <span style="margin-left:10px;">Coffee</span>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="seffects">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" aria-current="page" href="tsaa_menu.html" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                                <i class="fa-brands fa-envira fa-flip" style="color: #ffffff;"></i>
+                                <span style="margin-left:10px;">Tea</span>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="seffects">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" aria-current="page" href="snakan_menu.html" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                                <i class="fa-solid fa-cookie fa-spin" style="color: #ffffff;"></i>
+                                <span style="margin-left:10px;">Snacks</span>
+                            </a>
+                        </li>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+</header>
+
+   <div class="page">
+    <img src="images/boardv1.png">
+    <div class="display_text">
+    <h4>ROAST REPUBLIC</h4>
+    <hr>
+    <h2>Today's Menu:</h2>
+    <a href="kape_menu.html"><h3 id="s1">- Macchiato + free cookie</h3></a>
+    <a href="tsaa_menu.html"><h3 id="s2">- Tea + mini cakes</h3></a>
+    <a href="snakan_menu.html"><h3 id="s3">- Snacks + Americano</h3></a> 
+    <br><br><br>
+    <h3 id="s4">Free Pandesal 6am-9am only!</h3>
+    </div>
+   </div>
+
+   <footer>
+    <small>
+        Enjoy a great day ahead with Roast republic!
+    </small>
+   </footer>
+</body>
+
+<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+
+
+</html>

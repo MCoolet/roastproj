@@ -1,0 +1,34 @@
+*{
+    font-family: Eraser;
+}
+.page{
+  position: relative;
+  display: inline-block;
+}
+.page img {
+    transform: scale(1);
+  }
+.display_text
+{
+  position: absolute;
+  top: 43%; 
+  left: 27%; 
+  transform: translate(-50%, -50%); 
+  background-color: #212121; 
+  color: #fff; 
+  padding: 10px 20px; 
+  font-size: 90%; 
+  text-align: left;
+}
+#s1:hover{
+    text-decoration: underline;
+}
+#s2:hover{
+    text-decoration: underline;
+}#s3:hover{
+    text-decoration: underline;
+}
+#s4:hover{
+  text-decoration: underline;
+}
+

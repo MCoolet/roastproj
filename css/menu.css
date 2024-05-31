@@ -1,0 +1,171 @@
+.mgakape{
+    text-align: center;
+    position: relative;
+    margin-right: 20%;
+    margin-top: -5%;
+}
+
+details > summary{
+    list-style-type: none;
+}
+.ctypes{
+    display: inline-flex;
+}
+.resibo{
+    padding-top: 150px;
+    text-align: left;
+    padding-left: 30px;
+}
+.coffeeTypes1{
+    top: 120px;
+    left: 400px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding-right: 400px;
+ 
+}
+.coffeeTypes1 img {
+    margin-left:20px;
+}
+.coffeeTypes2{
+    top: 120px;
+    left: 400px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding-right: 400px;
+}
+.coffeeTypes2 img {
+    margin-left:20px;
+}
+.btn{
+    position: fixed;
+    top: 90%;
+    right: 2%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background: #212121;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    font-size: 22px;
+    padding-left: 10px;
+    padding-right: 100px;
+    padding-bottom: 80px;
+    margin-right: 150px;
+    font-weight: 500px;
+    border-radius: 30px;
+    align-content: center;
+}
+
+.container{
+    width: 100%;
+    height: 25vh;
+    align-items: center;
+    justify-content: center;
+}
+.popup{
+    position: fixed;
+    z-index: 999;
+    background-color: rgba(32, 32, 32, 0.8);
+    width: 400px;
+    height: 600px;
+    border-radius: 6px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #ffffff;
+    visibility: hidden;  
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #ffffff;
+    color: #000000;
+    border: 0;
+    outline: none;
+    font-size: 25px;
+    border-radius:4px ;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.container2{
+    width: 100%;
+    height: 100vh;
+    /* background: #3c5077; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn2{
+    padding: 10px 60px;
+    background: #70d862;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 30px;
+}
+.configurations{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    margin-top: 20%;
+    transform: scale(1.2);
+}
+
+.popup2{
+    display:inline-block; /* Hide the modal by default */
+    position: fixed;
+    z-index: 999; /* Ensure the modal is above everything else */
+    height: 420px;
+    width: 370px;
+    background-color: rgba(22, 22, 22, 0.8); /* Semi-transparent background */
+    border-radius: 6px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    padding: 0 30px 30px;
+    color: #fafafa;
+    visibility: hidden;
+}
+.open-popup2{
+    display: flex;
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+.popup2 button{
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 5px;
+    background: #ffffff;
+    color: #202020;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+    border-radius:4px ;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.popup2 button:hover{
+   transform: scale(1);
+   background-color: #dddddd;
+}
+.bayaad{
+    margin-top: -30%;
+}
+#main{
+    margin-right: 20px;
+}
